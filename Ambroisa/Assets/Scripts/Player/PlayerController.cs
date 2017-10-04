@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
             if (!rightButton && !leftButton)//We aren't moving left or right
             {
 
-                Debug.Log("Decel");
+
                 int direction = (int)CustomMathFunctions.ReturnSign(horizVelocity);
                 horizVelocity -= direction * frictionCoefficent;
 
@@ -112,13 +112,13 @@ public class PlayerController : MonoBehaviour
         #region Jumping
         if (jumpButton && grounded)
         {
-            
+
             vertVelocity += jumpPower;
 
         }
         else if (jumpButton && !grounded && airJump)
         {
-           
+
             vertVelocity = 0.0f;//We set it to 0 because it feels better to just instantly get full force jumps
             vertVelocity += jumpPower;
             airJump = false;
@@ -149,7 +149,7 @@ public class PlayerController : MonoBehaviour
             if (horizVelocity < 0)
                 horizVelocity = 0;
 
-           
+
             horizVelocity += runAccel;
             if (horizVelocity > maxRunSpeed)
             {
@@ -160,7 +160,7 @@ public class PlayerController : MonoBehaviour
         {
             if (horizVelocity > 0)
                 horizVelocity = 0;
-            
+
             horizVelocity -= runAccel;
             if (horizVelocity < (0.0f - maxRunSpeed))
             {
@@ -182,18 +182,17 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       
-        
+
+
         if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "Platform")
         {
 
             if (transform.position.y >= collision.gameObject.transform.position.y)//If this is true, we have landed
             {
-                
-            
                 grounded = true;
                 vertVelocity = 0.0f;
                 airJump = true;
+
             }
 
             else
@@ -206,12 +205,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        
+
 
         if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "Platform")
         {
             grounded = false;
-            
+
         }
     }
 }
