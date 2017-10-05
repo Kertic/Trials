@@ -192,6 +192,14 @@ public class PlayerController : MonoBehaviour
                 grounded = true;
                 vertVelocity = 0.0f;
                 airJump = true;
+                #region Hardcode placement for precision
+                float DistanceFromMyCenterToMyFeet = (transform.position.y - GetComponent<SpriteRenderer>().bounds.extents.y);
+                float DistanceFromBoxCenterToBoxTop = (collision.gameObject.transform.position.y - collision.gameObject.GetComponent<SpriteRenderer>().bounds.extents.y);
+
+                //RESUME HERE
+                //Note: Formula for offset needs to  be made
+                Debug.Log(collision.gameObject.GetComponent<SpriteRenderer>().bounds);
+                #endregion
 
             }
 
