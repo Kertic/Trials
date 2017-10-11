@@ -14,6 +14,8 @@ public class tutorialPlayer : MonoBehaviour {
     float xVelocity;
     float yVelocity;
     bool grounded;
+    float gravity;
+    bool double_jump;
     #endregion
 
 
@@ -28,19 +30,23 @@ public class tutorialPlayer : MonoBehaviour {
         #region Physics
         xVelocity = 0.0f;//0.0f is "float" format. "int" format has no decimals (0,4,12313) and "double" format has a decimal but no f (0.0, 0.2, 0.0332).
         yVelocity = 0.0f;//We use floats for decimal math because they are much, much faster than doubles. Doubles are precise enough for medical science, and floats aren't.
+        gravity = -3.0f;
+        double_jump = false;
         #endregion
 
     }
 
     // Update is called once per frame
     void Update () {
+        xVelocity = 0.0f;
         //This is the majority of our logic
         //Any calculations or modifications must be done here
 
         //I've already created some collision logic, so when your character touches the box, their vertical velocity will be set to 0.0f and the mysterious "Grounded" variable will be set to true.
-
+        
         #region Make the character move up
         //Part1: Make them move up at all.
+
         //Part2: Make them move up when the input button "Jump" is pressed
         //Part3: Make them stop moving when jump isn't pressed
         //Part4: Make them be affected by gravity
@@ -53,12 +59,43 @@ public class tutorialPlayer : MonoBehaviour {
         //Part3: Make them come to a stop when they stop moving.
         #endregion
 
+        if (Input.GetButtonDown("Jump") && grounded)
+        {
+            
+            yVelocity = 30.0f;
+            double_jump = true;
+        }
+        if (Input.GetButtonDown("Jump") && !grounded && double_jump && yVelocity < 5.0f)
+        {
 
+            yVelocity = 30.0f;
+            double_jump = false;
+        }
+        if (Input.GetButton("Horizontal"))
+        {
+            if (5 * Input.GetAxis("Horizontal") < 4.0f && 5 * Input.GetAxis("Horizontal") > 0.0f)
+            {
+                xVelocity = 4.0f;
+            }
+            else if (5 * Input.GetAxis("Horizontal") > -4.0f && 5 * Input.GetAxis("Horizontal") < 0.0f)
+            {
+                xVelocity = -4.0f;
+            }
+            else
+            {
+                xVelocity = 7 * Input.GetAxis("Horizontal");
+            }
+        }
 
         //These commands basically read: Move our characters position (up/right) equal to our velocity.
+        if (grounded == false && yVelocity > -4.0f)
+        {
+            yVelocity += gravity;
+        }
         transform.Translate(Vector3.up * yVelocity * Time.deltaTime);
         transform.Translate(Vector3.right * xVelocity * Time.deltaTime);
 		
+
 	}
 
 
@@ -75,7 +112,7 @@ public class tutorialPlayer : MonoBehaviour {
             {
                 grounded = true;
                 yVelocity = 0.0f;
-               
+                double_jump = true;
 
             }
 
