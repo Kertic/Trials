@@ -22,20 +22,20 @@ public class PlayerController : MonoBehaviour
     #endregion
     #region ButtonMasks
     //These are turned on for the frame where a player Pressed the button, but off otherwise (including holding down the button)
-    bool jumpButton;
+    protected bool jumpButton;
     //These are turned on or off if the button is held. These are this way to enable controller support, where the directions arent buttons.
-    bool leftButton;
-    bool rightButton;
-    bool upButton;
-    bool downButton;
+    protected bool leftButton;
+    protected bool rightButton;
+    protected bool upButton;
+    protected bool downButton;
     #endregion
     #region Controllability
-    int airJumps;
+    protected int airJumps;
     public int maxAirJumps;
     #endregion
     #region External Objects
 
-    
+
     #endregion
     #endregion
 
@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
     //FixedUpdate is called 60 times a second regardless of framerate
     void FixedUpdate()
     {
-        
+
 
         if (!grounded)
         #region Air physics
@@ -135,7 +135,7 @@ public class PlayerController : MonoBehaviour
         #region Jumping
         if (jumpButton && !grounded && airJumps > 0)
         {
-            
+
             vertVelocity = 0.0f;//We set it to 0 because it feels better to just instantly get full force jumps
             vertVelocity += jumpPower;
             airJumps -= 1;
@@ -145,7 +145,7 @@ public class PlayerController : MonoBehaviour
         else if (jumpButton && grounded)
         {
             vertVelocity += jumpPower;
-          
+
 
         }//No else, because if we arent grounded and we dont have an air jump, we can't jump
         #endregion
