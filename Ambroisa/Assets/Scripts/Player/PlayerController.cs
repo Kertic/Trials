@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
     public float vertVelocity;
     public float horizVelocity;
     public float weight;
-    public float frictionCoefficent;
+    public float friction;
+    public float airFriction;
     public float gravityAccel;
     public float runAccel;
     public float maxFallSpeed;
@@ -29,11 +30,12 @@ public class PlayerController : MonoBehaviour
     bool downButton;
     #endregion
     #region Controllability
-    bool airJump;
+    int airJumps;
+    public int maxAirJumps;
     #endregion
     #region External Objects
-    //This array keeps track of all objects we're in contact with
-    List<GameObject> currentCollisions;
+
+    
     #endregion
     #endregion
 
@@ -51,25 +53,15 @@ public class PlayerController : MonoBehaviour
         grounded = false;
         #endregion
         #region Controllability
-        airJump = true;
+        airJumps = maxAirJumps;
         #endregion
         #endregion
     }
 
-    // Update is called once per frame
+    //FixedUpdate is called 60 times a second regardless of framerate
     void FixedUpdate()
     {
-
-        #region Set Button Masks
-        jumpButton = Input.GetButtonDown("Jump");
-        rightButton = Input.GetAxis("Horizontal") > 0;
-        leftButton = Input.GetAxis("Horizontal") < 0;
-        upButton = Input.GetAxis("Vertical") > 0;
-        downButton = Input.GetAxis("Vertical") < 0;
-        #endregion
-
-
-
+        
 
         if (!grounded)
         #region Air physics
@@ -79,6 +71,22 @@ public class PlayerController : MonoBehaviour
             if (vertVelocity < maxFallSpeed)
             {
                 vertVelocity = maxFallSpeed;
+            }
+
+            //Air friction
+            if (!rightButton && !leftButton)//We aren't moving left or right
+            {
+
+
+                int direction = (int)CustomMathFunctions.ReturnSign(horizVelocity);
+                horizVelocity -= direction * airFriction;
+
+                if (direction > 0 && horizVelocity < 0)
+                    horizVelocity = 0;
+
+                if (direction < 0 && horizVelocity > 0)
+                    horizVelocity = 0;
+
             }
         }
         #endregion
@@ -91,7 +99,7 @@ public class PlayerController : MonoBehaviour
 
 
                 int direction = (int)CustomMathFunctions.ReturnSign(horizVelocity);
-                horizVelocity -= direction * frictionCoefficent;
+                horizVelocity -= direction * friction;
 
                 if (direction > 0 && horizVelocity < 0)
                     horizVelocity = 0;
@@ -106,22 +114,39 @@ public class PlayerController : MonoBehaviour
             #endregion
         }
         #endregion
+        //Apply motion
+        transform.Translate(Vector3.right * horizVelocity * Time.deltaTime);
+        transform.Translate(Vector3.up * vertVelocity * Time.deltaTime);
 
 
+    }
+
+    // Update is called once per frame
+    private void Update()
+    {
+        #region Set Button Masks
+        jumpButton = Input.GetButtonDown("Jump");
+        rightButton = Input.GetAxis("Horizontal") > 0;
+        leftButton = Input.GetAxis("Horizontal") < 0;
+        upButton = Input.GetAxis("Vertical") > 0;
+        downButton = Input.GetAxis("Vertical") < 0;
+        #endregion
         #region Controlling
         #region Jumping
-        if (jumpButton && grounded)
+        if (jumpButton && !grounded && airJumps > 0)
         {
-
-            vertVelocity += jumpPower;
-
-        }
-        else if (jumpButton && !grounded && airJump)
-        {
-
+            
             vertVelocity = 0.0f;//We set it to 0 because it feels better to just instantly get full force jumps
             vertVelocity += jumpPower;
-            airJump = false;
+            airJumps -= 1;
+
+
+        }
+        else if (jumpButton && grounded)
+        {
+            vertVelocity += jumpPower;
+          
+
         }//No else, because if we arent grounded and we dont have an air jump, we can't jump
         #endregion
         #region Climb/Decending
@@ -170,10 +195,6 @@ public class PlayerController : MonoBehaviour
         #endregion
         #endregion
 
-        //Apply motion
-        transform.Translate(Vector3.right * horizVelocity * Time.deltaTime);
-        transform.Translate(Vector3.up * vertVelocity * Time.deltaTime);
-
 
     }
 
@@ -191,7 +212,7 @@ public class PlayerController : MonoBehaviour
             {
                 grounded = true;
                 vertVelocity = 0.0f;
-                airJump = true;
+                airJumps = maxAirJumps;
 
 
             }
