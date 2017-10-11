@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
 
 
     // Use this for initialization
-    void Start()
+    protected void Start()
     {
         #region Initialize Player Variables
         #region Physics Variables
@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //FixedUpdate is called 60 times a second regardless of framerate
-    void FixedUpdate()
+   protected void FixedUpdate()
     {
         
 
@@ -122,7 +122,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void Update()
+    protected void Update()
     {
         #region Set Button Masks
         jumpButton = Input.GetButtonDown("Jump");
