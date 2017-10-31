@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //FixedUpdate is called 60 times a second regardless of framerate
-   protected void FixedUpdate()
+    protected void FixedUpdate()
     {
 
 
@@ -126,10 +126,10 @@ public class PlayerController : MonoBehaviour
     {
         #region Set Button Masks
         jumpButton = Input.GetButtonDown("Jump");
-        rightButton = Input.GetAxis("Horizontal") > 0;
-        leftButton = Input.GetAxis("Horizontal") < 0;
-        upButton = Input.GetAxis("Vertical") > 0;
-        downButton = Input.GetAxis("Vertical") < 0;
+        rightButton = Input.GetAxis("Horizontal") > 0 && Input.GetButton("Horizontal");
+        leftButton = Input.GetAxis("Horizontal") < 0 && Input.GetButton("Horizontal");
+        upButton = Input.GetAxis("Vertical") > 0 && Input.GetButton("Vertical");
+        downButton = Input.GetAxis("Vertical") < 0 && Input.GetButton("Vertical");
         #endregion
         #region Controlling
         #region Jumping
@@ -208,6 +208,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "Platform")
         {
 
+
             if (transform.position.y >= collision.gameObject.transform.position.y)//If this is true, we have landed
             {
                 grounded = true;
@@ -217,13 +218,17 @@ public class PlayerController : MonoBehaviour
 
             }
 
-            else
-                grounded = false;
+            //else
+            //    grounded = false;
 
         }
 
     }
-
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Floor" && transform.position.y < collision.gameObject.transform.position.y)
+            horizVelocity = 0.0f;
+    }
     private void OnTriggerExit2D(Collider2D collision)
     {
 
