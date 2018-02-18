@@ -32,8 +32,11 @@ public class PlayerMover : MonoBehaviour
         public float runSpeed;
         public float jumpHeight;
         public float gravity;
+        public float maxFallSpeed;
     }
     SPhysicsVariables physicsVariables;
+    [SerializeField]
+    float physScaler;
     #endregion
 
     // Use this for initialization
@@ -51,11 +54,12 @@ public class PlayerMover : MonoBehaviour
         force = new Vector3(0.0f, 0.0f, 0.0f);
         #region Initialize Physics Variables
         physicsVariables.grounded = false;
-        physicsVariables.groundFriction = 0.05f;
-        physicsVariables.airFriction = 0.05f;
-        physicsVariables.runSpeed = 0.2f;
-        physicsVariables.jumpHeight = 0.2f;
-        physicsVariables.gravity = -0.0098f;
+        physicsVariables.groundFriction = 0.1f * physScaler;//at 0.02 timestep, 0.25f
+        physicsVariables.airFriction = 0.1f * physScaler;//0.25f
+        physicsVariables.runSpeed = 0.4f * physScaler;//1.0f
+        physicsVariables.jumpHeight = 1.0f * physScaler;//1.0f
+        physicsVariables.gravity = -0.049f * (physScaler * 0.5f);//-0.049f
+        physicsVariables.maxFallSpeed = -0.1f * physScaler;
         #endregion
     }
 
@@ -136,6 +140,14 @@ public class PlayerMover : MonoBehaviour
             {
                 physicsVariables.grounded = true;
                 Debug.Log("Collided with ground");
+
+                
+            }
+            groundChecker = GetComponent<BoxCollider2D>();
+            if(collision.otherCollider == groundChecker)
+            {
+                Physics2D.IgnoreCollision(groundChecker, collision.collider, true);
+                Debug.Log("Collision ignored between player box and" + collision.gameObject.name);
             }
         }
 
