@@ -21,6 +21,10 @@ public class PlayerMover : MonoBehaviour
     };
     SPlayerInputs playerInputs;
 
+    #region Secondary Input Variables
+    bool jumpWasPressed;
+    #endregion
+
 
     #region Physics variables
     Vector3 force;//Move by this much each frame 
@@ -50,6 +54,10 @@ public class PlayerMover : MonoBehaviour
         playerInputs.attack = false;
         playerInputs.skill = false;
         playerInputs.quickSwap = false;
+
+        #region Secondary Input Variables
+        jumpWasPressed = false;
+        #endregion
         #endregion
         force = new Vector3(0.0f, 0.0f, 0.0f);
         #region Initialize Physics Variables
@@ -58,8 +66,24 @@ public class PlayerMover : MonoBehaviour
         physicsVariables.airFriction = 0.1f * physScaler;//0.25f
         physicsVariables.runSpeed = 0.4f * physScaler;//1.0f
         physicsVariables.jumpHeight = 1.0f * physScaler;//1.0f
-        physicsVariables.gravity = -0.049f * (physScaler * 0.5f);//-0.049f
+        physicsVariables.gravity = -0.049f * (physScaler * 0.25f);//-0.049f
         physicsVariables.maxFallSpeed = -0.1f * physScaler;
+        #endregion
+        #region Adjust Colliders based on math
+        #region Circle Collider (Ground Checker)
+        CircleCollider2D groundChecker = GetComponent<CircleCollider2D>();
+        groundChecker.radius = 0.06f;
+        groundChecker.offset = new Vector2(
+            groundChecker.offset.x,
+            -(GetComponent<SpriteRenderer>().size.y * 0.5f - groundChecker.radius)
+            );
+        #endregion
+        #region Box Collider (Hitbox)
+        BoxCollider2D playerHitbox = GetComponent<BoxCollider2D>();
+        playerHitbox.size = GetComponent<SpriteRenderer>().size;
+        playerHitbox.size = new Vector2(playerHitbox.size.x, playerHitbox.size.y - groundChecker.radius * 2.0f);
+        playerHitbox.offset = new Vector2(0.0f, groundChecker.radius);
+        #endregion
         #endregion
     }
 
@@ -92,8 +116,12 @@ public class PlayerMover : MonoBehaviour
             }
             if (playerInputs.up)
             {
-                force += new Vector3(0.0f, physicsVariables.jumpHeight, 0.0f);
+                if (!jumpWasPressed)
+                    force += new Vector3(0.0f, physicsVariables.jumpHeight, 0.0f);
+                jumpWasPressed = true;
             }
+            else
+                jumpWasPressed = false;
 
 
             if (Mathf.Abs(force.x) < physicsVariables.groundFriction)
@@ -135,16 +163,20 @@ public class PlayerMover : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground")
         {
+            SpriteRenderer testSR = GetComponent<SpriteRenderer>();
+            SpriteRenderer testOtherSR = collision.gameObject.GetComponent<SpriteRenderer>();
             Collider2D groundChecker = GetComponent<CircleCollider2D>();
             if (collision.otherCollider == groundChecker)
             {
                 physicsVariables.grounded = true;
                 Debug.Log("Collided with ground");
+                float deltaMidpoints = 0.5f * GetComponent<SpriteRenderer>().bounds.size.y + (0.5f * collision.gameObject.GetComponent<SpriteRenderer>().bounds.size.y);
+                float desiredHeight = collision.gameObject.transform.position.y + deltaMidpoints;
+                transform.Translate(0.0f, desiredHeight - transform.position.y, 0.0f);
 
-                
             }
             groundChecker = GetComponent<BoxCollider2D>();
-            if(collision.otherCollider == groundChecker)
+            if (collision.otherCollider == groundChecker)
             {
                 Physics2D.IgnoreCollision(groundChecker, collision.collider, true);
                 Debug.Log("Collision ignored between player box and" + collision.gameObject.name);
