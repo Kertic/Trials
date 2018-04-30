@@ -80,15 +80,15 @@ public class PlayerMover : MonoBehaviour
         if (physicsVariables.grounded)
         {
             force.y = 0.0f;//Set vertical motion to 0
-            if (playerInputs.left)
+            if (playerInputs.leftPressed)
             {
                 force = new Vector3(-physicsVariables.runSpeed, force.y, force.z);//Hard set so there isnt any ramp up
             }
-            if (playerInputs.right)
+            if (playerInputs.rightPressed)
             {
                 force = new Vector3(physicsVariables.runSpeed, force.y, force.z);//Hard set so there isnt any ramp up
             }
-            if (playerInputs.up)
+            if (playerInputs.upPressed)
             {
                 if (!jumpWasPressed)
                     force += new Vector3(0.0f, physicsVariables.jumpHeight, 0.0f);
@@ -108,11 +108,11 @@ public class PlayerMover : MonoBehaviour
         else//Not grounded
         {
             float groundAirRatio = physicsVariables.groundFriction / physicsVariables.airFriction;
-            if (playerInputs.left)
+            if (playerInputs.leftPressed)
             {
                 force = new Vector3(-physicsVariables.runSpeed * groundAirRatio, force.y, force.z);//Hard set so there isnt any ramp up
             }
-            if (playerInputs.right)
+            if (playerInputs.rightPressed)
             {
                 force = new Vector3(physicsVariables.runSpeed * groundAirRatio, force.y, force.z);//Hard set so there isnt any ramp up
             }

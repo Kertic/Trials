@@ -5,7 +5,12 @@ using UnityEngine;
 public class PlayerHudManager : MonoBehaviour
 {
     [SerializeField]
-    UnityEngine.UI.RawImage SkillIcon;
+    public UnityEngine.UI.RawImage BuffIcon;
+
+    [SerializeField]
+    UnityEngine.UI.RawImage HealthBarFill;
+    [SerializeField]
+    UnityEngine.UI.RawImage HealthBar;
     // Use this for initialization
     void Start()
     {
@@ -15,12 +20,18 @@ public class PlayerHudManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void SetSkillIcon(UnityEngine.UI.RawImage imageToUpdateTo)
     {
-        SkillIcon.texture = imageToUpdateTo.texture;
-        
+        BuffIcon.texture = imageToUpdateTo.texture;
+
+
+    }
+
+    public void SetHealthBarAmount(float ratio)
+    {
+        HealthBarFill.rectTransform.sizeDelta = new Vector2(HealthBar.rectTransform.sizeDelta.x * ratio, HealthBar.rectTransform.sizeDelta.y);
     }
 }
