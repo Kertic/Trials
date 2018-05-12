@@ -6,15 +6,17 @@ public class HudManager : MonoBehaviour
 {
 
     GameManager gm;
+
+    [SerializeField]
     HealthBar[] UIHealthBars;
+    [SerializeField]
     ResourceBar[] UIResourceBars;
     // Use this for initialization
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
         GameManager.playerHudDelegate += UpdateHealthBar;
-        UIHealthBars = new HealthBar[4];
-        UIResourceBars = new ResourceBar[4];
+
     }
 
     // Update is called once per frame
