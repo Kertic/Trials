@@ -1,97 +1,285 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public struct SPlayerInputs
+
+
+
+
+public enum InputTypes
 {
-    public bool upPressed;
-    public bool downPressed;
-    public bool leftPressed;
-    public bool rightPressed;
-    public bool attackPressed;
-    public bool skillPressed;
-    public bool quickSwapPressed;
-
-    public bool upButtonDown;
-    public bool downButtonDown;
-    public bool leftButtonDown;
-    public bool rightButtonDown;
-    public bool attackButtonDown;
-    public bool skillButtonDown;
-    public bool quickSwapButtonDown;
-    public SPlayerInputs(SPlayerInputs inInput)
-    {
-        upPressed = inInput.upPressed;
-        downPressed = inInput.downPressed;
-        leftPressed = inInput.leftPressed;
-        rightPressed = inInput.rightPressed;
-        attackPressed = inInput.attackPressed;
-        skillPressed = inInput.skillPressed;
-        quickSwapPressed = inInput.quickSwapPressed;
-
-        upButtonDown = inInput.upButtonDown;
-        downButtonDown = inInput.downButtonDown;
-        leftButtonDown = inInput.leftButtonDown;
-        rightButtonDown = inInput.rightButtonDown;
-        attackButtonDown = inInput.attackButtonDown;
-        skillButtonDown = inInput.skillButtonDown;
-        quickSwapButtonDown = inInput.quickSwapButtonDown;
-    }
-
-};
+    UP,
+    DOWN,
+    LEFT,
+    RIGHT,
+    ATTACK,
+    SKILL1,
+    SKILL2,
+    SKILL3,
+    NUM_OF_INPUT_TYPES
+}
+public delegate void PlayerInput(InputTypes inputType, bool wasPress);
 public class InputManager : MonoBehaviour
 {
-    SPlayerInputs pi;
+    public PlayerInput p1InputDelegate;
+    public PlayerInput p2InputDelegate;
+    public PlayerInput p3InputDelegate;
+    public PlayerInput p4InputDelegate;
 
-    bool[] hasBeenReleased;
+    bool[,] isCurrentlyPressed;
     // Use this for initialization
     void Start()
     {
-        pi.upPressed = false;
-        pi.downPressed = false;
-        pi.leftPressed = false;
-        pi.rightPressed = false;
-        pi.attackPressed = false;
-        pi.skillPressed = false;
-        pi.quickSwapPressed = false;
-
-        pi.upButtonDown = false;
-        pi.downButtonDown = false;
-        pi.leftButtonDown = false;
-        pi.rightButtonDown = false;
-        pi.attackButtonDown = false;
-        pi.skillButtonDown = false;
-        pi.quickSwapButtonDown = false;
-        hasBeenReleased = new bool[7];
+        isCurrentlyPressed = new bool[4, (int)InputTypes.NUM_OF_INPUT_TYPES];
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        #region Set Input Booleans
-        pi.upPressed = (Input.GetAxis("Vertical") > 0.0f) ? true : false;
-        pi.downPressed = (Input.GetAxis("Vertical") < 0.0f) ? true : false;
-        pi.rightPressed = (Input.GetAxis("Horizontal") > 0.0f) ? true : false;
-        pi.leftPressed = (Input.GetAxis("Horizontal") < 0.0f) ? true : false;
-        pi.attackPressed = (Input.GetAxis("Attack") > 0.0f) ? true : false;
-        pi.skillPressed = (Input.GetAxis("Skill") > 0.0f) ? true : false;
-        pi.quickSwapPressed = (Input.GetAxis("QuickSwap") > 0.0f) ? true : false;
+        //Decide to call delegates or not
+        for (uint player = 0; player < 4; player++)
+            for (int inputType = 0; inputType < (int)InputTypes.NUM_OF_INPUT_TYPES; inputType++)
+                ButtonMessageFactory((InputTypes)inputType, player);
 
-
-
-
-        pi.upButtonDown = (pi.upPressed && Input.GetButtonDown("Vertical")) ? true : false;
-        pi.downButtonDown = (pi.downPressed && Input.GetButtonDown("Vertical")) ? true : false;
-        pi.rightButtonDown = (pi.rightPressed && Input.GetButtonDown("Horizontal")) ? true : false;
-        pi.leftButtonDown = (pi.leftPressed && Input.GetButtonDown("Horizontal")) ? true : false;
-        pi.attackButtonDown = (pi.attackPressed && Input.GetButtonDown("Attack")) ? true : false;
-        pi.skillButtonDown = (pi.skillPressed && Input.GetButtonDown("Skill")) ? true : false;
-        pi.quickSwapButtonDown = (pi.quickSwapPressed && Input.GetButtonDown("QuickSwap")) ? true : false;
-        #endregion
     }
 
-    public SPlayerInputs GetInputStatus()
+    void ButtonMessageFactory(InputTypes inputType, uint playerIndex)
     {
-        return new SPlayerInputs(pi);
+        bool isInputDown = false;
+
+        switch (inputType)
+        {
+            #region Up Input
+            case InputTypes.UP:
+                switch (playerIndex)
+                {
+                    case 0:
+                        isInputDown = Input.GetAxis("VerticalP1") > 0.0f;
+                        break;
+                    case 1:
+                        isInputDown = Input.GetAxis("VerticalP2") > 0.0f;
+                        break;
+                    case 2:
+                        isInputDown = Input.GetAxis("VerticalP3") > 0.0f;
+                        break;
+                    case 3:
+                        isInputDown = Input.GetAxis("VerticalP4") > 0.0f;
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            #endregion
+            #region Down Input
+            case InputTypes.DOWN:
+                switch (playerIndex)
+                {
+                    case 0:
+                        isInputDown = Input.GetAxis("VerticalP1") < 0.0f;
+                        break;
+                    case 1:
+                        isInputDown = Input.GetAxis("VerticalP2") < 0.0f;
+                        break;
+                    case 2:
+                        isInputDown = Input.GetAxis("VerticalP3") < 0.0f;
+                        break;
+                    case 3:
+                        isInputDown = Input.GetAxis("VerticalP4") < 0.0f;
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            #endregion
+            #region Left Input
+            case InputTypes.LEFT:
+                switch (playerIndex)
+                {
+                    case 0:
+                        isInputDown = Input.GetAxis("HorizontalP1") < 0.0f;
+                        break;
+                    case 1:
+                        isInputDown = Input.GetAxis("HorizontalP2") < 0.0f;
+                        break;
+                    case 2:
+                        isInputDown = Input.GetAxis("HorizontalP3") < 0.0f;
+                        break;
+                    case 3:
+                        isInputDown = Input.GetAxis("HorizontalP4") < 0.0f;
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            #endregion
+            #region Right Input
+            case InputTypes.RIGHT:
+                switch (playerIndex)
+                {
+                    case 0:
+                        isInputDown = Input.GetAxis("HorizontalP1") > 0.0f;
+                        break;
+                    case 1:
+                        isInputDown = Input.GetAxis("HorizontalP2") > 0.0f;
+                        break;
+                    case 2:
+                        isInputDown = Input.GetAxis("HorizontalP3") > 0.0f;
+                        break;
+                    case 3:
+                        isInputDown = Input.GetAxis("HorizontalP4") > 0.0f;
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            #endregion
+            #region Attack Input
+            case InputTypes.ATTACK:
+                switch (playerIndex)
+                {
+                    case 0:
+                        isInputDown = Input.GetAxis("AttackP1") > 0.0f;
+                        break;
+                    case 1:
+                        isInputDown = Input.GetAxis("AttackP2") > 0.0f;
+                        break;
+                    case 2:
+                        isInputDown = Input.GetAxis("AttackP3") > 0.0f;
+                        break;
+                    case 3:
+                        isInputDown = Input.GetAxis("AttackP4") > 0.0f;
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            #endregion
+            #region Skill 1 input
+            case InputTypes.SKILL1:
+                switch (playerIndex)
+                {
+                    case 0:
+                        isInputDown = Input.GetAxis("Skill1P1") > 0.0f;
+                        break;
+                    case 1:
+                        isInputDown = Input.GetAxis("Skill1P2") > 0.0f;
+                        break;
+                    case 2:
+                        isInputDown = Input.GetAxis("Skill1P3") > 0.0f;
+                        break;
+                    case 3:
+                        isInputDown = Input.GetAxis("Skill1P4") > 0.0f;
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            #endregion
+            #region Skill 2 Input
+            case InputTypes.SKILL2:
+                switch (playerIndex)
+                {
+                    case 0:
+                        isInputDown = Input.GetAxis("Skill2P1") > 0.0f;
+                        break;
+                    case 1:
+                        isInputDown = Input.GetAxis("Skill2P2") > 0.0f;
+                        break;
+                    case 2:
+                        isInputDown = Input.GetAxis("Skill2P3") > 0.0f;
+                        break;
+                    case 3:
+                        isInputDown = Input.GetAxis("Skill2P4") > 0.0f;
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            #endregion
+            #region Skill 3 Input
+            case InputTypes.SKILL3:
+                switch (playerIndex)
+                {
+                    case 0:
+                        isInputDown = Input.GetAxis("Skill3P1") > 0.0f;
+                        break;
+                    case 1:
+                        isInputDown = Input.GetAxis("Skill3P2") > 0.0f;
+                        break;
+                    case 2:
+                        isInputDown = Input.GetAxis("Skill3P3") > 0.0f;
+                        break;
+                    case 3:
+                        isInputDown = Input.GetAxis("Skill3P4") > 0.0f;
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            #endregion
+            default:
+                break;
+        }
+
+        if (isInputDown)
+        {
+            if (!GetIsCurrentlyPressed(playerIndex, inputType))//if its not currently pressed, send the "Press" message
+                switch (playerIndex)
+                {
+                    case 0:
+                        if (p1InputDelegate != null)
+                            p1InputDelegate(inputType, true);
+                        break;
+                    case 1:
+                        if (p2InputDelegate != null)
+                            p2InputDelegate(inputType, true);
+                        break;
+                    case 2:
+                        if (p3InputDelegate != null)
+                            p3InputDelegate(inputType, true);
+                        break;
+                    case 3:
+                        if (p4InputDelegate != null)
+                            p4InputDelegate(inputType, true);
+                        break;
+                    default:
+                        break;
+                }
+
+
+            SetIsCurrentlyPressed(playerIndex, inputType, true);
+        }
+        else
+        {
+            if (GetIsCurrentlyPressed(playerIndex, inputType))//If it was pressed, but now its not (due to the else) then we need to send the release message
+                switch (playerIndex)
+                {
+                    case 0:
+                        p1InputDelegate(inputType, false);
+                        break;
+                    case 1:
+                        p2InputDelegate(inputType, false);
+                        break;
+                    case 2:
+                        p3InputDelegate(inputType, false);
+                        break;
+                    case 3:
+                        p4InputDelegate(inputType, false);
+                        break;
+                    default:
+                        break;
+                }
+
+            SetIsCurrentlyPressed(playerIndex, inputType, false);
+        }
+    }
+
+    void SetIsCurrentlyPressed(uint PlayerIndex, InputTypes inputType, bool isPressed)
+    {
+        isCurrentlyPressed[PlayerIndex, (int)inputType] = isPressed;
+    }
+    public bool GetIsCurrentlyPressed(uint PlayerIndex, InputTypes inputType)
+    {
+        return isCurrentlyPressed[PlayerIndex, (int)inputType];
     }
 }

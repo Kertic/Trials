@@ -6,12 +6,10 @@ public class PlayerMover : MonoBehaviour
 {
 
 
-    SPlayerInputs playerInputs;
+    InputManager inputManager;
+    Player ourPlayer;
 
-    
-    #region Secondary Input Variables
-    bool jumpWasPressed;
-    #endregion
+
 
 
     #region Physics variables
@@ -36,9 +34,28 @@ public class PlayerMover : MonoBehaviour
     {
 
 
+        inputManager = FindObjectOfType<GameManager>().GetComponent<InputManager>();
+        ourPlayer = GetComponent<Player>();
+        #region Input Delegate Assignment
+        switch (ourPlayer.playerIndex)
+        {
+            case 0:
+                inputManager.p1InputDelegate += InputResponse;
+                break;
+            case 1:
+                inputManager.p2InputDelegate += InputResponse;
+                break;
+            case 2:
+                inputManager.p3InputDelegate += InputResponse;
+                break;
+            case 3:
+                inputManager.p4InputDelegate += InputResponse;
+                break;
+            default:
+                break;
+        }
+        #endregion
 
-
-        jumpWasPressed = false;
 
 
         force = new Vector3(0.0f, 0.0f, 0.0f);
@@ -72,30 +89,49 @@ public class PlayerMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerInputs = GameObject.FindGameObjectWithTag("GameManager").GetComponent<InputManager>().GetInputStatus();
 
+
+    }
+    void InputResponse(InputTypes inputType, bool wasPress)
+    {
+        switch (inputType)
+        {
+            case InputTypes.UP:
+                if(wasPress)
+                force += new Vector3(0.0f, physicsVariables.jumpHeight, 0.0f);
+                break;
+            case InputTypes.DOWN:
+                break;
+            case InputTypes.LEFT:
+                break;
+            case InputTypes.RIGHT:
+                break;
+            case InputTypes.ATTACK:
+                break;
+            case InputTypes.SKILL1:
+                break;
+            case InputTypes.SKILL2:
+                break;
+            case InputTypes.SKILL3:
+                break;
+            default:
+                break;
+        }
     }
     private void FixedUpdate()
     {
+
         if (physicsVariables.grounded)
         {
-            force.y = 0.0f;//Set vertical motion to 0
-            if (playerInputs.leftPressed)
+            
+            if (inputManager.GetIsCurrentlyPressed(ourPlayer.playerIndex, InputTypes.LEFT))
             {
                 force = new Vector3(-physicsVariables.runSpeed, force.y, force.z);//Hard set so there isnt any ramp up
             }
-            if (playerInputs.rightPressed)
+            if (inputManager.GetIsCurrentlyPressed(ourPlayer.playerIndex, InputTypes.RIGHT))
             {
                 force = new Vector3(physicsVariables.runSpeed, force.y, force.z);//Hard set so there isnt any ramp up
             }
-            if (playerInputs.upPressed)
-            {
-                if (!jumpWasPressed)
-                    force += new Vector3(0.0f, physicsVariables.jumpHeight, 0.0f);
-                jumpWasPressed = true;
-            }
-            else
-                jumpWasPressed = false;
 
 
             if (Mathf.Abs(force.x) < physicsVariables.groundFriction)
@@ -108,11 +144,11 @@ public class PlayerMover : MonoBehaviour
         else//Not grounded
         {
             float groundAirRatio = physicsVariables.groundFriction / physicsVariables.airFriction;
-            if (playerInputs.leftPressed)
+            if (inputManager.GetIsCurrentlyPressed(ourPlayer.playerIndex, InputTypes.LEFT))
             {
                 force = new Vector3(-physicsVariables.runSpeed * groundAirRatio, force.y, force.z);//Hard set so there isnt any ramp up
             }
-            if (playerInputs.rightPressed)
+            if (inputManager.GetIsCurrentlyPressed(ourPlayer.playerIndex, InputTypes.RIGHT))
             {
                 force = new Vector3(physicsVariables.runSpeed * groundAirRatio, force.y, force.z);//Hard set so there isnt any ramp up
             }
@@ -142,6 +178,7 @@ public class PlayerMover : MonoBehaviour
             if (collision.otherCollider == groundChecker)
             {
                 physicsVariables.grounded = true;
+                force.y = 0.0f;
                 Debug.Log("Collided with ground");
                 float deltaMidpoints = 0.5f * GetComponent<SpriteRenderer>().bounds.size.y + (0.5f * collision.gameObject.GetComponent<SpriteRenderer>().bounds.size.y);
                 float desiredHeight = collision.gameObject.transform.position.y + deltaMidpoints;

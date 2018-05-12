@@ -15,8 +15,8 @@ public class Player : MonoBehaviour
 
     int health;
     int maxHealth;
-    PlayerBuffs currentBuff;
-
+    public uint playerIndex;
+    static uint latestPlayer = 0;
 
     GameManager gm;
 
@@ -24,42 +24,73 @@ public class Player : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        playerIndex = latestPlayer;
+        latestPlayer++;
+
         health = 9;
         maxHealth = 10;
         gm = FindObjectOfType<GameManager>();
-        gm._entityManager.SetPlayer(this);
+        gm.SetPlayer(this, playerIndex);
+
+        switch (playerIndex)
+        {
+            case 0:
+                gm.GetComponent<InputManager>().p1InputDelegate += RespondToInput;
+                break;
+            case 1:
+                gm.GetComponent<InputManager>().p2InputDelegate += RespondToInput;
+                break;
+            case 2:
+                gm.GetComponent<InputManager>().p3InputDelegate += RespondToInput;
+                break;
+            case 3:
+                gm.GetComponent<InputManager>().p4InputDelegate += RespondToInput;
+                break;
+            default:
+                break;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        SPlayerInputs input = gm._inputManager.GetInputStatus();
-        if (input.downButtonDown)
+
+
+    }
+    void RespondToInput(InputTypes inputType, bool wasPressed)
+    {
+        switch (inputType)
         {
-            health -= 1;
-            gm._hudManager.SetHealthBarAmount((float)health / (float)maxHealth);
-        }
-        #region Refactor when done testing icon hotswapping
-
-        if (input.attackPressed)
-            currentBuff = PlayerBuffs.NO_BUFF;
-        if (input.skillPressed)
-            currentBuff = PlayerBuffs.FIRE_HASTE;
-
-        switch (currentBuff)
-        {
-
-            case PlayerBuffs.NO_BUFF:
-                gm._hudManager.SetSkillIcon(Resources.Load<GameObject>("UI/SkillIconNoBuff").GetComponent<UnityEngine.UI.RawImage>());
-
+            case InputTypes.UP:
                 break;
-            case PlayerBuffs.FIRE_HASTE:
-                gm._hudManager.SetSkillIcon(Resources.Load<GameObject>("UI/SkillIconFire").GetComponent<UnityEngine.UI.RawImage>());
+            case InputTypes.DOWN:
                 break;
-
+            case InputTypes.LEFT:
+                break;
+            case InputTypes.RIGHT:
+                break;
+            case InputTypes.ATTACK:
+                //Testing UI
+                if (wasPressed)
+                    tempDamageMe();
+                break;
+            case InputTypes.SKILL1:
+                break;
+            case InputTypes.SKILL2:
+                break;
+            case InputTypes.SKILL3:
+                break;
             default:
                 break;
         }
-        #endregion
+
     }
+    void tempDamageMe()
+    {
+        health -= 1;
+        GameManager.playerHudDelegate((int)playerIndex);
+    }
+    public int GetHealth() { return health; }
+    public int GetMaxHealth() { return maxHealth; }
+
 }

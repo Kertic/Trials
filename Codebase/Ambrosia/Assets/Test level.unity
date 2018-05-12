@@ -191,7 +191,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 52610229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.88, y: 4.8, z: 0}
+  m_LocalPosition: {x: 0.88, y: 4.8, z: -2.21}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -584,6 +584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f3eb14d0f82db4c8149c05e4e9af95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerIndex: 0
 --- !u!1 &714442457
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,9 +626,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e61709b311584943856a53dacae6ff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BuffIcon: {fileID: 1021831892}
-  HealthBarFill: {fileID: 798586164}
-  HealthBar: {fileID: 1339966175}
 --- !u!4 &714442460
 Transform:
   m_ObjectHideFlags: 0
@@ -653,7 +651,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputManager: {fileID: 714442458}
-  _entityManager: {fileID: 714442462}
   _hudManager: {fileID: 714442459}
 --- !u!114 &714442462
 MonoBehaviour:
@@ -666,6 +663,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b07ec9bc3b4634dbe8629c9f20b6ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemies: []
+  player: {fileID: 0}
 --- !u!1 &798586162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,7 +1019,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1458251066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.15, y: -3.48, z: 0}
+  m_LocalPosition: {x: 0.15, y: -3.48, z: -2.3}
   m_LocalScale: {x: 61.15, y: 22.2, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
