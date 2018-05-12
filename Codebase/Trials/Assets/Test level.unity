@@ -395,7 +395,6 @@ GameObject:
   - component: {fileID: 714442459}
   - component: {fileID: 714442458}
   - component: {fileID: 714442461}
-  - component: {fileID: 714442462}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -457,19 +456,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inputManager: {fileID: 714442458}
   _hudManager: {fileID: 714442459}
---- !u!114 &714442462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 714442457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39b07ec9bc3b4634dbe8629c9f20b6ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemies: []
-  player: {fileID: 0}
 --- !u!1 &798586162
 GameObject:
   m_ObjectHideFlags: 0
