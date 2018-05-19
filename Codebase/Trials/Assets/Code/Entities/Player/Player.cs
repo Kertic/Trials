@@ -16,7 +16,6 @@ public class Player : MonoBehaviour
     int health;
     int maxHealth;
     public uint playerIndex;
-    static uint latestPlayer = 0;
 
     GameManager gm;
 
@@ -24,8 +23,7 @@ public class Player : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        playerIndex = latestPlayer;
-        latestPlayer++;
+
 
         health = 9;
         maxHealth = 10;

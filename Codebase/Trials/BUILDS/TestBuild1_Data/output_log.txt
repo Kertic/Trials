@@ -1,670 +1,1595 @@
-Initialize engine version: 5.6.1f1 (2860b30f0b54)
+Mono path[0] = 'C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/BUILDS/TestBuild1_Data/Managed'
+Mono path[1] = 'C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/BUILDS/TestBuild1_Data/Mono'
+Mono config path = 'C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/BUILDS/TestBuild1_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/BUILDS/TestBuild1_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55263
+Multi-casting "[IP] 192.168.0.19 [Port] 55263 [Flags] 2 [Guid] 3690803245 [EditorId] 971615203 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-GC522K1) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55263]
+PlayerConnection already initialized - listening to [0.0.0.0:55263]
+Player data archive not found at `C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/BUILDS/TestBuild1_Data/data.unity3d`, using local filesystemInitialize engine version: 5.6.1f1 (2860b30f0b54)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
     Renderer: NVIDIA Quadro M2000M (ID=0x13b0)
     Vendor:   NVIDIA
     VRAM:     3072 MB
-    Driver:   23.21.13.9077
+    Driver:   24.21.13.9731
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Brennan\Documents\PROJECT\Ambrosia\Codebase\Ambrosia\BUILDS\TestBuild1_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Brennan\Documents\PROJECT\Ambrosia\Codebase\Ambrosia\BUILDS\TestBuild1_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Brennan\Documents\PROJECT\Ambrosia\Codebase\Ambrosia\BUILDS\TestBuild1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Brennan\Documents\PROJECT\Ambrosia\Codebase\Ambrosia\BUILDS\TestBuild1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Brennan\Documents\PROJECT\Ambrosia\Codebase\Ambrosia\BUILDS\TestBuild1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Brennan\Documents\PROJECT\Ambrosia\Codebase\Ambrosia\BUILDS\TestBuild1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Brennan\Documents\PROJECT\Ambrosia\Codebase\Ambrosia\BUILDS\TestBuild1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Brennan\Documents\PROJECT\Ambrosia\Codebase\Ambrosia\BUILDS\TestBuild1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.021 seconds
-Platform assembly: C:\Users\Brennan\Documents\PROJECT\Ambrosia\Codebase\Ambrosia\BUILDS\TestBuild1_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Brennan\Documents\PROJECT\Ambrosia\Codebase\Ambrosia\BUILDS\TestBuild1_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\BUILDS\TestBuild1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\BUILDS\TestBuild1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\BUILDS\TestBuild1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\BUILDS\TestBuild1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\BUILDS\TestBuild1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\BUILDS\TestBuild1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\BUILDS\TestBuild1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\BUILDS\TestBuild1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.082 seconds
+Platform assembly: C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\BUILDS\TestBuild1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\BUILDS\TestBuild1_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.793971 ms
+UnloadTime: 2.137283 ms
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Left ground
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Collided with ground
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Left ground
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Collided with ground
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Left ground
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Collided with ground
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Left ground
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collision ignored between player box andTestplatform
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:192)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 192)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Left ground
+Collision ignored between player box andTestplatform
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:192)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 192)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
+
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
+
+Collision ignored between player box andTestGround
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:192)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 192)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
+
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
+
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
+
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
+
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Collided with ground
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
-Left ground
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
+
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
+
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
+
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
+
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
+
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
+
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
+
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
+
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
+
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
+
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
+
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
+
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
+
+Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
+ 
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
+
+Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Left ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionExit2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:206)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 206)
 
 Collided with ground
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerMover:OnCollisionEnter2D(Collision2D) (at C:\Users\Brennan\Documents\PROJECT\Trials\Codebase\Trials\Assets\Code\Entities\Player\PlayerMover.cs:182)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename: C:/Users/Brennan/Documents/PROJECT/Trials/Codebase/Trials/Assets/Code/Entities/Player/PlayerMover.cs Line: 182)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 1a30 -> priority: 1 
-  Thread -> id: 4ff0 -> priority: 1 
-  Thread -> id: 3af0 -> priority: 1 
-  Thread -> id: 4854 -> priority: 1 
+  Thread -> id: 48d4 -> priority: 1 
+  Thread -> id: 1748 -> priority: 1 
+  Thread -> id: 3d28 -> priority: 1 
+  Thread -> id: 38d8 -> priority: 1 
