@@ -68,9 +68,7 @@ public class Player : MonoBehaviour
             case InputTypes.RIGHT:
                 break;
             case InputTypes.ATTACK:
-                //Testing UI
-                if (wasPressed)
-                    tempDamageMe();
+
                 break;
             case InputTypes.SKILL1:
                 break;

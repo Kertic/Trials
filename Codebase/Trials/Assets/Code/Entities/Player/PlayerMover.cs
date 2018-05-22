@@ -14,16 +14,18 @@ public class PlayerMover : MonoBehaviour
 
     #region Physics variables
     Vector3 force;//Move by this much each frame 
-    struct SPhysicsVariables
+    [System.Serializable]
+    public class SPhysicsVariables
     {
-        public bool grounded;
-        public float groundFriction;
-        public float airFriction;
-        public float runSpeed;
-        public float jumpHeight;
-        public float gravity;
-        public float maxFallSpeed;
+        public bool grounded = false;
+        public float groundFriction = 0.1f;
+        public float airFriction = 0.1f;
+        public float runSpeed = 0.4f;
+        public float jumpHeight = 1.0f;
+        public float gravity = -0.049f;
+        public float maxFallSpeed = -0.1f;
     }
+    [SerializeField]
     SPhysicsVariables physicsVariables;
     [SerializeField]
     float physScaler;
@@ -61,12 +63,12 @@ public class PlayerMover : MonoBehaviour
         force = new Vector3(0.0f, 0.0f, 0.0f);
         #region Initialize Physics Variables
         physicsVariables.grounded = false;
-        physicsVariables.groundFriction = 0.1f * physScaler;//at 0.02 timestep, 0.25f
-        physicsVariables.airFriction = 0.1f * physScaler;//0.25f
-        physicsVariables.runSpeed = 0.4f * physScaler;//1.0f
+        physicsVariables.groundFriction = 0.1f * physScaler;//0.1f
+        physicsVariables.airFriction = 0.1f * physScaler;//0.1f
+        physicsVariables.runSpeed = 0.4f * physScaler;//0.4f
         physicsVariables.jumpHeight = 1.0f * physScaler;//1.0f
         physicsVariables.gravity = -0.049f * (physScaler * 0.25f);//-0.049f
-        physicsVariables.maxFallSpeed = -0.1f * physScaler;
+        physicsVariables.maxFallSpeed = -0.1f * physScaler;//maxFallSpeed
         #endregion
         #region Adjust Colliders based on math
         #region Circle Collider (Ground Checker)
@@ -97,8 +99,8 @@ public class PlayerMover : MonoBehaviour
         switch (inputType)
         {
             case InputTypes.UP:
-                if(wasPress)
-                force += new Vector3(0.0f, physicsVariables.jumpHeight, 0.0f);
+                if (wasPress)
+                    force += new Vector3(0.0f, physicsVariables.jumpHeight, 0.0f);
                 break;
             case InputTypes.DOWN:
                 break;
@@ -123,7 +125,7 @@ public class PlayerMover : MonoBehaviour
 
         if (physicsVariables.grounded)
         {
-            
+
             if (inputManager.GetIsCurrentlyPressed(ourPlayer.playerIndex, InputTypes.LEFT))
             {
                 force = new Vector3(-physicsVariables.runSpeed, force.y, force.z);//Hard set so there isnt any ramp up
