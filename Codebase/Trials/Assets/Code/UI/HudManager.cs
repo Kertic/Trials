@@ -25,6 +25,10 @@ public class HudManager : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Used to update our health bar when the hud updates
+    /// </summary>
+    /// <param name="indexToUpdate"></param>
     void UpdateHealthBar(int indexToUpdate)
     {
         UIHealthBars[indexToUpdate].SetHealthBarAmount(
