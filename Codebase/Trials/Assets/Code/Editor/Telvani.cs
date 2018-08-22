@@ -10,5 +10,6 @@ public class Telvani
     static void DoSomething()
     {
         Debug.Log("It worky");
+        Debug.Log("IT Also worky again");
     }
 }
