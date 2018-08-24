@@ -1,40 +1,43 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class HudManager : MonoBehaviour
+namespace Code.UI
 {
-
-    GameManager gm;
-
-    [SerializeField]
-    HealthBar[] UIHealthBars;
-    [SerializeField]
-    ResourceBar[] UIResourceBars;
-    // Use this for initialization
-    void Start()
-    {
-        gm = FindObjectOfType<GameManager>();
-        GameManager.playerHudDelegate += UpdateHealthBar;
-
-    }
-
-    // Update is called once per frame
-    void Update()
+    public class HudManager : MonoBehaviour
     {
 
+        GameManager.GameManager _gm;
+
+        [SerializeField]
+        HealthBar[] UIHealthBars;
+        [SerializeField]
+        ResourceBar[] UIResourceBars;
+        // Use this for initialization
+        private void Start()
+        {
+            _gm = FindObjectOfType<GameManager.GameManager>();
+            GameManager.GameManager.PlayerHealthDelegate += UpdateHealthBarHealth;
+            GameManager.GameManager.PlayerMoveDelegate += UpdateHealthBarPosition;
+
+        }
+
+
+
+        /// <summary>
+        /// Used to update our health bar when the hud updates
+        /// </summary>
+        /// <param name="indexToUpdate"></param>
+        private void UpdateHealthBarHealth(int indexToUpdate)
+        {
+            UIHealthBars[indexToUpdate].SetHealthBarAmount(
+                (float)_gm.GetPlayer(indexToUpdate).GetHealth() /
+                (float)_gm.GetPlayer(indexToUpdate).GetMaxHealth());
+        }
+
+        private void UpdateHealthBarPosition(int indexToUpdate)
+        {
+            UIHealthBars[indexToUpdate].UpdatePlayerPosition();
+        }
+
+
     }
-
-    /// <summary>
-    /// Used to update our health bar when the hud updates
-    /// </summary>
-    /// <param name="indexToUpdate"></param>
-    void UpdateHealthBar(int indexToUpdate)
-    {
-        UIHealthBars[indexToUpdate].SetHealthBarAmount(
-           (float)gm.GetPlayer((uint)indexToUpdate).GetHealth() /
-           (float)gm.GetPlayer((uint)indexToUpdate).GetMaxHealth());
-    }
-
-
 }

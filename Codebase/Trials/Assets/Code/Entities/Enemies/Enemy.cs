@@ -9,7 +9,6 @@ public class Enemy : MonoBehaviour {
 
     int health;
     int maxHealth;
-    //Encapsulated using Id
     private int id;
     public int Id
     {

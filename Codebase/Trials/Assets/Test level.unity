@@ -326,12 +326,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224524888164031872, guid: 31a73ac59b9f1e3499754c8b21378ef1,
     type: 2}
   m_PrefabInternal: {fileID: 1794434800}
---- !u!114 &350249966 stripped
+--- !u!114 &500326109 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114670581181418190, guid: 31a73ac59b9f1e3499754c8b21378ef1,
+  m_PrefabParentObject: {fileID: 114830907102101636, guid: 31a73ac59b9f1e3499754c8b21378ef1,
     type: 2}
-  m_PrefabInternal: {fileID: 1794434800}
-  m_Script: {fileID: 11500000, guid: b41b7e178ca229f439f39de1daca3889, type: 3}
+  m_PrefabInternal: {fileID: 1104001153}
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &699152273
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +417,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 524a0f611dd314f4fa46e1742fab549e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  physicsVariables:
+    grounded: 0
+    groundFriction: 0.1
+    airFriction: 0.1
+    runSpeed: 0.4
+    jumpHeight: 1
+    gravity: -0.049
+    maxFallSpeed: -0.1
   physScaler: 0.25
 --- !u!58 &699152277
 CircleCollider2D:
@@ -530,11 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e61709b311584943856a53dacae6ff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIHealthBars:
-  - {fileID: 767201016}
-  - {fileID: 350249966}
-  - {fileID: 0}
-  - {fileID: 0}
+  UIHealthBars: []
   UIResourceBars: []
 --- !u!4 &714442460
 Transform:
@@ -601,12 +605,6 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224524888164031872, guid: 31a73ac59b9f1e3499754c8b21378ef1,
     type: 2}
   m_PrefabInternal: {fileID: 1104001153}
---- !u!114 &767201016 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114670581181418190, guid: 31a73ac59b9f1e3499754c8b21378ef1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1104001153}
-  m_Script: {fileID: 11500000, guid: b41b7e178ca229f439f39de1daca3889, type: 3}
 --- !u!1 &938510480
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +700,12 @@ Transform:
   m_Father: {fileID: 757306147}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1028597169 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114477435864698126, guid: 31a73ac59b9f1e3499754c8b21378ef1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1794434800}
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1104001153
 Prefab:
   m_ObjectHideFlags: 0
@@ -803,6 +807,21 @@ Prefab:
       propertyPath: m_Name
       value: HealthBar1
       objectReference: {fileID: 0}
+    - target: {fileID: 114670581181418190, guid: 31a73ac59b9f1e3499754c8b21378ef1,
+        type: 2}
+      propertyPath: _healthBarFill
+      value: 
+      objectReference: {fileID: 1509194265}
+    - target: {fileID: 114670581181418190, guid: 31a73ac59b9f1e3499754c8b21378ef1,
+        type: 2}
+      propertyPath: _healthBarBackdrop
+      value: 
+      objectReference: {fileID: 500326109}
+    - target: {fileID: 114670581181418190, guid: 31a73ac59b9f1e3499754c8b21378ef1,
+        type: 2}
+      propertyPath: _followingPlayer
+      value: 
+      objectReference: {fileID: 699152281}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31a73ac59b9f1e3499754c8b21378ef1, type: 2}
   m_IsPrefabParent: 0
@@ -990,6 +1009,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 0.16}
   m_EdgeRadius: 0
+--- !u!114 &1509194265 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114477435864698126, guid: 31a73ac59b9f1e3499754c8b21378ef1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1104001153}
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1596860540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,6 +1154,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 524a0f611dd314f4fa46e1742fab549e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  physicsVariables:
+    grounded: 0
+    groundFriction: 0.1
+    airFriction: 0.1
+    runSpeed: 0.4
+    jumpHeight: 1
+    gravity: -0.049
+    maxFallSpeed: -0.1
   physScaler: 0.25
 --- !u!58 &1621389259
 CircleCollider2D:
@@ -1243,6 +1276,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1750947824 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114830907102101636, guid: 31a73ac59b9f1e3499754c8b21378ef1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1794434800}
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1751588372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1439,6 +1478,21 @@ Prefab:
       propertyPath: m_Name
       value: HealthBar2
       objectReference: {fileID: 0}
+    - target: {fileID: 114670581181418190, guid: 31a73ac59b9f1e3499754c8b21378ef1,
+        type: 2}
+      propertyPath: _healthBarFill
+      value: 
+      objectReference: {fileID: 1028597169}
+    - target: {fileID: 114670581181418190, guid: 31a73ac59b9f1e3499754c8b21378ef1,
+        type: 2}
+      propertyPath: _healthBarBackdrop
+      value: 
+      objectReference: {fileID: 1750947824}
+    - target: {fileID: 114670581181418190, guid: 31a73ac59b9f1e3499754c8b21378ef1,
+        type: 2}
+      propertyPath: _followingPlayer
+      value: 
+      objectReference: {fileID: 1621389257}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31a73ac59b9f1e3499754c8b21378ef1, type: 2}
   m_IsPrefabParent: 0

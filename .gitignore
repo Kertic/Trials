@@ -72,3 +72,5 @@ ProjectSettings
 *.csproj
 *.sln
 *.suo
+
+Codebase/Trials/\.idea/
