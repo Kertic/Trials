@@ -74,3 +74,5 @@ ProjectSettings
 *.suo
 
 Codebase/Trials/\.idea/
+
+*.DotSettings
