@@ -110,7 +110,7 @@ public class PlayerMover : MonoBehaviour
         {
             case InputTypes.UP:
                 if (wasPress)
-                    _force += new Vector3(0.0f, physicsVariables.jumpHeight, 0.0f);
+                    _force = new Vector3(_force.x, physicsVariables.jumpHeight, 0.0f);
                 break;
             case InputTypes.DOWN:
                 break;
@@ -178,8 +178,14 @@ public class PlayerMover : MonoBehaviour
         }
 
 
-        transform.Translate(_force);
-        GameManager.PlayerMoveDelegate(_ourPlayer.playerIndex);
+
+        
+        if (_force != Vector3.zero)
+        {
+            GameManager.PlayerMoveDelegate(_ourPlayer.playerIndex);
+            transform.Translate(_force);
+        }
+
         transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 1.0f);
     }
 
